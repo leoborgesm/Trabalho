@@ -1,0 +1,6 @@
+13/02/2025
+
+
+
+Tema: Gestão Comercial e Vendas
+Objetivo: Um banco de dados comercial estruturado para gerenciar clientes, produtos, pedidos e faturamento. Ele armazena informações de clientes, acompanha o estoque, processa pedidos e controla pagamentos. Além disso, gera relatórios de vendas e consumo para otimizar a gestão e melhorar a experiência do cliente.

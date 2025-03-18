@@ -5,8 +5,7 @@ from pydantic import BaseModel
 from typing import List, Optional
 
 # Conectar ao MongoDB
-uri = "mongodb+srv://leott11:12345@cluster1.lb8bz.mongodb.net/"
-#uri = input("Digite a url do seu banco mongo aqui: ")
+uri = input("Digite a url do seu banco mongo aqui: ")
 client = MongoClient(uri)
 print("CONEXÃO ESTABELECIDA COM SUCESSO !")
 db = client["central_atendimento"]

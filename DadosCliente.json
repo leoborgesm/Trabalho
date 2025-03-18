@@ -1,4 +1,4 @@
-dados_cliente = {
+{
     "cliente_id": "12345",
     "nome": "João Silva",
     "email": "joao.silva@email.com",
@@ -15,5 +15,5 @@ dados_cliente = {
         }
     ],
     "historico_operacoes": [],
-    "data_criacao": datetime.utcnow()  # Adicionando um campo de data
+    "data_criacao": #datetime.utcnow()  # Adicionando um campo de data
 }

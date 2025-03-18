@@ -10,19 +10,19 @@ colecao_clientes = db["clientes"]
 
 # Exemplo de dados de cliente para inserção/atualização
 cliente = {
-    "cliente_id": "12345",
-    "nome": "João Silva",
-    "email": "joao.silva@email.com",
-    "telefone": "11987654321",
+    "cliente_id": "",
+    "nome": "",
+    "email": "",
+    "telefone": "",
     "cartoes": [
         {
-            "cartao_id": "cartao_001",
-            "numero_mascarado": "**** **** **** 1234",
-            "bandeira": "Visa",
-            "status": "ativo",
-            "limite_total": 5000,
-            "limite_utilizado": 1000,
-            "limite_disponivel": 4000
+            "cartao_id": "",
+            "numero_mascarado": "",
+            "bandeira": "",
+            "status": "",
+            "limite_total": ,
+            "limite_utilizado": ,
+            "limite_disponivel": 
         }
     ],
     "historico_operacoes": [],

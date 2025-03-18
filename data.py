@@ -18,49 +18,23 @@ colecao_clientes = db["clientes"]
 
 # Documento de dados do cliente
 dados_cliente = {
-  "cliente_id": "12345",
-  "nome": "Leonardo Morais",
-  "cpf": "123.456.789-00",
-  "telefone": "+55 31 98765-4321",
-  "email": "leonardo@email.com",
-  "cartoes": [
-    {
-      "cartao_id": "987654321",
-      "numero_mascarado": "**** **** **** 4321",
-      "bandeira": "Visa",
-      "status": "bloqueado",
-      "motivo_bloqueio": "roubo",
-      "data_bloqueio": datetime.utcnow(),
-      "limite_total": 5000.00,
-      "limite_utilizado": 3200.00,
-      "limite_disponivel": 1800.00
-    },
-    {
-      "cartao_id": "123987654",
-      "numero_mascarado": "**** **** **** 8765",
-      "bandeira": "Mastercard",
-      "status": "ativo",
-      "limite_total": 7000.00,
-      "limite_utilizado": 2500.00,
-      "limite_disponivel": 4500.00
-    }
-  ],
-  "historico_operacoes": [
-    {
-      "tipo": "bloqueio",
-      "cartao_id": "987654321",
-      "data": datetime.utcnow(),
-      "motivo": "roubo",
-      "canal": "App Mobile"
-    },
-    {
-      "tipo": "consulta_limite",
-      "cartao_id": "987654321",
-      "data": datetime.utcnow(),
-      "limite_disponivel": 1800.00,
-      "canal": "App Mobile"
-    }
-  ]
+    "cliente_id": "12345",
+    "nome": "João Silva",
+    "email": "joao.silva@email.com",
+    "telefone": "11987654321",
+    "cartoes": [
+        {
+            "cartao_id": "cartao_001",
+            "numero_mascarado": "**** **** **** 1234",
+            "bandeira": "Visa",
+            "status": "ativo",
+            "limite_total": 5000,
+            "limite_utilizado": 1000,
+            "limite_disponivel": 4000
+        }
+    ],
+    "historico_operacoes": [],
+    "data_criacao": datetime.utcnow()  # Adicionando um campo de data
 }
 
 # Verificar se o cliente já existe na coleção (baseado no cliente_id)

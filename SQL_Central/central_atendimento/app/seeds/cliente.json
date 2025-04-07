@@ -1,0 +1,21 @@
+{
+    "_id": "67d8f41f36cb4fd05e281a14",
+    "cartoes": [
+      {
+        "bandeira": "Visa",
+        "cartao_id": "cartao_001",
+        "limite_disponivel": 4000,
+        "limite_total": 5000,
+        "limite_utilizado": 1000,
+        "numero_mascarado": "**** **** **** 1234",
+        "status": "ativo"
+      }
+    ],
+    "cliente_id": "12345",
+    "data_criacao": "2025-03-18T04:18:39.538000",
+    "email": "joao.silva@email.com",
+    "historico_operacoes": [],
+    "nome": "João Silva",
+    "telefone": "11987654321"
+  }
+  

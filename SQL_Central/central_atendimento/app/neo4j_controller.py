@@ -29,3 +29,20 @@ def get_historico(cliente_id: str):
         raise HTTPException(status_code=404, detail="Histórico não encontrado")
 
     return {"cliente_id": cliente_id, "historico": historico}
+
+# 📊 Analytics: status mais comuns entre todos os clientes
+@router.get("/analytics/status-mais-comuns")
+def status_mais_comuns():
+    query = """
+    MATCH (:Cliente)-[r:MUDOU_PARA]->(s:Status)
+    RETURN s.tipo AS status, COUNT(r) AS vezes
+    ORDER BY vezes DESC
+    """
+    with driver.session() as session:
+        result = session.run(query)
+        analise = [{"status": record["status"], "vezes": record["vezes"]} for record in result]
+    
+    if not analise:
+        raise HTTPException(status_code=404, detail="Nenhum status encontrado")
+
+    return {"analise": analise}
